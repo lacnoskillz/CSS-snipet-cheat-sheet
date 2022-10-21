@@ -1,0 +1,91 @@
+:root{
+  --Green: rgb(19, 255, 38);
+  --greypurp: grey  purple;
+  --black : black;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 1;
+  background: linear-gradient(180deg, grey, purple);
+  
+}
+
+
+
+.main-header{
+  justify-content: space-between;
+  padding: 30px;
+  background:-moz-linear-gradient(grey,purple);
+  color:var(--Green);
+  text-align: center;
+
+
+}
+.container {
+  display: inline-table;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+
+.container ~ .card {
+  justify-content: flex-end;
+}
+.card {
+  padding: 30px;
+  text-align:left;
+  border-style:dotted;
+  border-width: 3px;
+  transition-property: font-size;
+  transition-duration: 1s;
+  transition-delay: 0s;
+  
+  width: 260px;
+  margin: 30px;
+}
+.card:hover {
+  font-size: 20px;
+  border-color: white
+} 
+.card pre:hover{
+  background-color: black;
+}
+.card:hover > header {
+  border-color: white;
+}
+.card header {
+  padding: 10px;
+  background-color: black;
+  color:var(--Green);
+  border-style:solid;
+  position: relative;
+  margin-top: -50px;
+  border-color: var(--Green);
+
+}
+.card pre{
+  color: white;
+  background-color: rgb(207, 118, 236);
+  user-select: all;
+  overflow: auto;
+  text-align: start;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+  }
+}
+@media only screen and (min-width: 768px) and ( max-width: 991px) {
+.container {
+  display: flex;
+flex-direction: row;
+}

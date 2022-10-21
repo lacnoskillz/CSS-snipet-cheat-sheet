@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CSS snippet cheat sheat</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <h1>CSS snippet cheat sheet</h1>
+    <p>A place to find syntax for CSS code</p>
+  </header>
+
+  <main>
+      <div class="container">
+        <section class="card">
+          <header>Flexbox Row</header>
+          <pre>.row {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          }
+          </pre>
+        </section>
+        <section class="card">
+          <header>Flexbox Column</header>
+          <pre>.column {
+          display: flex;
+          flex-direction: column;
+          }
+          </pre>
+        </section>
+      </div>
+      <div class="container">
+        <section class="card">
+          <header>CSS Grid Layout</header>
+          <pre>.grid {
+          display: grid;
+          width: 100%;
+          grid-templayte-columns: repeat(12, 1fr);
+          }
+          </pre>
+        </section>
+        <section class="card">
+          <header>Linear Gradients</header>
+            <pre>.linear-gradient-background {
+            background-image: linear-gradient(
+            rgba(232, 102, 236, 0.3) 0%,
+            rgba(232, 102, 236, 0.6) 100%
+            );
+            }
+            </pre>
+        </section>
+      </div>
+      <div class="container">
+        <section class="card">
+          <header>Box transition Glow</header>
+            <pre>.code-card .card-header {
+            border-radius: 8px;
+            transition: all 0.5 ease-in-out;
+            }
+            .code-card:hover,
+            .code-card:hover .card-header {
+            box-shadow: inset 0px 0px 8px
+            rgba(232, 102, 236, 1), 0 0 15px
+            rgba(232, 102, 236, 1);
+            }
+            </pre>
+        </section>
+        <section class="card">
+          <header>Overlay Card with Title</header>
+            <pre>.card-header {
+            position: relative;
+            margin-top: -20px;
+            }
+            </pre>
+        </section>
+      </div>
+  </main>
+</body>
+
+
+</html>
